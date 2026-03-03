@@ -211,6 +211,7 @@
                     "\n-\n";
                 break;
             case "message":
+                // Data Channel message received from remote peer
                 rtcLog.innerText +=
                     `Data Channel:${e.target.label}:${e.type}\n` +
                     JSON.stringify(e.data, null, 2) +
