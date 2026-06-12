@@ -193,6 +193,7 @@
                     state === "failed" ||
                     state === "closed"
                 ) {
+                    // This also fires when the callee rejects the call.
                     videoCallSection.hidden = true;
                     callList.hidden = false;
                 } else if (state === "connecting") {
